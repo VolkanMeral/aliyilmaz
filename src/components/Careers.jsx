@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Careers() {
+export default function Careers({ onSubmitApplication }) {
   const [employmentType, setEmploymentType] = useState('angestellt'); // angestellt, selbststaendig
   const [isNonEU, setIsNonEU] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -27,6 +27,23 @@ export default function Careers() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const newApp = {
+      id: Math.floor(1000 + Math.random() * 9000),
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      birthdate: formData.birthdate,
+      email: formData.email,
+      phone: formData.phone,
+      address: formData.address,
+      city: formData.city,
+      zip: formData.zip,
+      citizenship: formData.citizenship,
+      employment: employmentType,
+      status: 'pending'
+    };
+    if (onSubmitApplication) {
+      onSubmitApplication(newApp);
+    }
     setSubmitted(true);
   };
 

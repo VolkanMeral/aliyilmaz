@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Navbar({ onNavigate, activePage }) {
+export default function Navbar({ onNavigate, activePage, onViewChange }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -97,7 +97,7 @@ export default function Navbar({ onNavigate, activePage }) {
                     </div>
                   </a>
                   <div className="dropdown-divider"></div>
-                  <a href="#portal-admin" className="dropdown-item" onClick={(e) => { e.preventDefault(); setIsDropdownOpen(false); alert('Adminbereich (Etappe 2) wird geladen...'); }}>
+                  <a href="#portal-admin" className="dropdown-item" onClick={(e) => { e.preventDefault(); setIsDropdownOpen(false); onViewChange('admin'); }}>
                     <div className="item-icon">⚙️</div>
                     <div className="item-text">
                       <strong>Admin Backoffice</strong>
@@ -145,7 +145,7 @@ export default function Navbar({ onNavigate, activePage }) {
             <div className="mobile-portal-buttons">
               <button className="btn btn-secondary w-full" onClick={() => { setIsMobileMenuOpen(false); alert('Kundenportal (Etappe 2)'); }}>Kundenportal</button>
               <button className="btn btn-secondary w-full" onClick={() => { setIsMobileMenuOpen(false); alert('Fahrerportal (Etappe 2)'); }}>Fahrerportal</button>
-              <button className="btn btn-primary w-full" onClick={() => { setIsMobileMenuOpen(false); alert('Adminbereich (Etappe 2)'); }}>Admin Backoffice</button>
+              <button className="btn btn-primary w-full" onClick={() => { setIsMobileMenuOpen(false); onViewChange('admin'); }}>Admin Backoffice</button>
             </div>
           </li>
         </ul>

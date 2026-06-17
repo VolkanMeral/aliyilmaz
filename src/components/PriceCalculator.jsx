@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function PriceCalculator() {
+export default function PriceCalculator({ onBookOrder }) {
   const [step, setStep] = useState(1);
   const [vehicle, setVehicle] = useState('pkw'); // pkw, kombi, transporter
   const [packageSize, setPackageSize] = useState('small'); // small, medium, large
@@ -59,6 +59,24 @@ export default function PriceCalculator() {
 
   const handleBookingSubmit = (e) => {
     e.preventDefault();
+    const orderId = `FR-${new Date().getFullYear()}-${Math.floor(100000 + Math.random() * 900000)}`;
+    const newOrder = {
+      id: orderId,
+      name: bookingData.name,
+      company: bookingData.company,
+      email: bookingData.email,
+      phone: bookingData.phone,
+      pickup: bookingData.pickup,
+      delivery: bookingData.delivery,
+      price: price,
+      status: 'pending',
+      date: bookingData.date,
+      time: bookingData.time
+    };
+    if (onBookOrder) {
+      onBookOrder(newOrder);
+    }
+    setBookingData({ ...bookingData, orderId });
     setBookingSubmitted(true);
   };
 
@@ -73,7 +91,8 @@ export default function PriceCalculator() {
       pickup: '',
       delivery: '',
       date: '',
-      time: ''
+      time: '',
+      orderId: ''
     });
   };
 
@@ -265,7 +284,7 @@ export default function PriceCalculator() {
                       Ein Mitarbeiter wird sich in Kürze zur Bestätigung der Abholzeit bei Ihnen melden.
                     </p>
                     <div className="booking-summary-box glass-card">
-                      <div><strong>Auftrags-ID:</strong> FR-{new Date().getFullYear()}-{Math.floor(100000 + Math.random() * 900000)}</div>
+                      <div><strong>Auftrags-ID:</strong> {bookingData.orderId}</div>
                       <div><strong>Abholung:</strong> {bookingData.pickup} ({bookingData.date} - {bookingData.time})</div>
                       <div><strong>Lieferung:</strong> {bookingData.delivery}</div>
                       <div><strong>Gesamtpreis:</strong> €{(price * 1.2).toFixed(2)} (Inkl. 20% USt.)</div>
