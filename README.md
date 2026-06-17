@@ -1,10 +1,27 @@
 # Ali Yılmaz Web Sitesi
 
-Ali Yılmaz'ın kişisel/kurumsal web sitesi projesi.
+Ali Yılmaz'ın kişisel/kurumsal web sitesi projesi. Bu proje **Vite + React** kullanılarak geliştirilmektedir.
 
-## Kurulum ve Başlangıç
+## Kurulum ve Çalıştırma
 
-Proje kurulum adımları ve teknolojiler belirlendikten sonra burası güncellenecektir.
+Projenin yerelinizde çalıştırılması için aşağıdaki adımları takip edebilirsiniz:
+
+1. Bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
+
+2. Geliştirme sunucusunu başlatın:
+   ```bash
+   npm run dev
+   ```
+
+3. Üretim (production) sürümünü derleyin:
+   ```bash
+   npm run build
+   ```
 
 ## Teknolojiler
-- HTML5 / CSS3 / JavaScript
+- React (Bileşen tabanlı UI kütüphanesi)
+- Vite (Hızlı geliştirme ve derleme aracı)
+- Vanilla CSS (Özel stil tasarımları için)
