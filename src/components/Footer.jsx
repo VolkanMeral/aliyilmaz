@@ -78,14 +78,14 @@ export default function Footer() {
                   <div className="legal-section-block">
                     <strong>Aliyilmaz GmbH</strong> <br />
                     Express-Logistik & Kleintransporte <br />
-                    Musterstraße 42, 6922 Wolfurt, Vorarlberg, Österreich <br /> <br />
+                    Musterstraße 42, 9500 Villach, Kärnten, Österreich <br /> <br />
                     <strong>Geschäftsführung:</strong> Ali Yılmaz <br />
                     <strong>Firmenbuchnummer:</strong> FN 123456 z <br />
-                    <strong>Firmenbuchgericht:</strong> Landesgericht Feldkirch <br />
+                    <strong>Firmenbuchgericht:</strong> Landesgericht Klagenfurt <br />
                     <strong>UID-Nummer:</strong> ATU12345678 <br />
                     <strong>Gewerbeberechtigung:</strong> Güterbeförderungsgewerbe (Konzessioniert) <br />
-                    <strong>Gewerbebehörde:</strong> Bezirkshauptmannschaft Bregenz <br />
-                    <strong>Mitgliedschaft:</strong> Wirtschaftskammer Vorarlberg, Fachgruppe Güterbeförderung <br />
+                    <strong>Gewerbebehörde:</strong> Magistrat der Stadt Villach <br />
+                    <strong>Mitgliedschaft:</strong> Wirtschaftskammer Kärnten, Fachgruppe Güterbeförderung <br />
                   </div>
 
                   <h3>Haftungsausschluss</h3>

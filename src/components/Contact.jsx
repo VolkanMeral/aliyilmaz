@@ -39,7 +39,7 @@ export default function Contact() {
                 <p>
                   Aliyilmaz GmbH <br />
                   Musterstraße 42, <br />
-                  6922 Wolfurt, Vorarlberg, Österreich
+                  9500 Villach, Kärnten, Österreich
                 </p>
               </div>
             </div>
@@ -51,18 +51,6 @@ export default function Contact() {
                 <p>
                   Telefon: <a href="tel:+43557412345">+43 5574 12345</a> <br />
                   E-Mail: <a href="mailto:office@aliyilmaz.gmbh">office@aliyilmaz.gmbh</a>
-                </p>
-              </div>
-            </div>
-
-            <div className="glass-card info-card">
-              <span className="info-icon">⏱️</span>
-              <div className="info-details">
-                <h3>Betriebszeiten</h3>
-                <p>
-                  Montag – Freitag: 08:00 – 18:00 Uhr <br />
-                  Samstag (Expressdienst): 09:00 – 14:00 Uhr <br />
-                  <em>24/7 Notdienst für Vertragspartner</em>
                 </p>
               </div>
             </div>
@@ -141,15 +129,15 @@ export default function Contact() {
         {/* Custom Visual stylized map representation of Vorarlberg / Lake Constance / Wolfurt region */}
         <div className="glass-card map-illustration-card">
           <div className="map-header">
-            <h4>Liefer- & Stützpunktnetzwerk Vorarlberg</h4>
-            <span className="map-badge">Zentrale Wolfurt</span>
+            <h4>Liefer- & Stützpunktnetzwerk Villach</h4>
+            <span className="map-badge">Zentrale Villach</span>
           </div>
           
           <div className="map-graphic-container">
             <svg className="map-svg" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* Lake Constance representation */}
+              {/* Lake Wörthersee representation */}
               <path d="M50 50 C120 40, 200 80, 240 100 C200 130, 100 120, 50 50 Z" fill="rgba(227, 6, 19, 0.05)" stroke="rgba(227, 6, 19, 0.15)" strokeWidth="1" />
-              <text x="110" y="80" fill="var(--text-secondary)" fontSize="10" className="map-text">Bodensee</text>
+              <text x="110" y="80" fill="var(--text-secondary)" fontSize="10" className="map-text">Wörthersee</text>
               
               {/* Borders */}
               <path d="M240 100 L300 80 L350 120 L400 180 L380 250 L300 280 L200 240 L220 180 Z" stroke="rgba(255,255,255,0.05)" strokeWidth="1" strokeDasharray="4 4" />
@@ -160,23 +148,23 @@ export default function Contact() {
               <line x1="280" y1="120" x2="260" y2="210" stroke="rgba(255,255,255,0.08)" strokeWidth="1.5" />
               <line x1="280" y1="120" x2="310" y2="240" stroke="rgba(255,255,255,0.08)" strokeWidth="1.5" />
               
-              {/* Main Hub: Wolfurt */}
+              {/* Main Hub: Villach */}
               <circle cx="280" cy="120" r="8" fill="var(--primary-color)" className="main-hub" />
               <circle cx="280" cy="120" r="16" stroke="var(--primary-color)" strokeWidth="1.5" className="main-hub-ring" />
-              <text x="296" y="124" fill="#ffffff" fontWeight="bold" fontSize="12" className="map-text">Wolfurt (HQ)</text>
+              <text x="296" y="124" fill="#ffffff" fontWeight="bold" fontSize="12" className="map-text">Villach (HQ)</text>
               
               {/* Branch nodes */}
               <circle cx="210" cy="90" r="4" fill="#ffffff" />
-              <text x="175" y="82" fill="var(--text-secondary)" fontSize="10" className="map-text">Bregenz</text>
+              <text x="175" y="82" fill="var(--text-secondary)" fontSize="10" className="map-text">Klagenfurt</text>
 
               <circle cx="350" cy="160" r="4" fill="#ffffff" />
-              <text x="360" y="164" fill="var(--text-secondary)" fontSize="10" className="map-text">Dornbirn</text>
+              <text x="360" y="164" fill="var(--text-secondary)" fontSize="10" className="map-text">Spittal</text>
 
               <circle cx="260" cy="210" r="4" fill="#ffffff" />
-              <text x="215" y="214" fill="var(--text-secondary)" fontSize="10" className="map-text">Feldkirch</text>
+              <text x="215" y="214" fill="var(--text-secondary)" fontSize="10" className="map-text">Wolfsberg</text>
 
               <circle cx="310" cy="240" r="4" fill="#ffffff" />
-              <text x="320" y="244" fill="var(--text-secondary)" fontSize="10" className="map-text">Bludenz</text>
+              <text x="320" y="244" fill="var(--text-secondary)" fontSize="10" className="map-text">St. Veit</text>
             </svg>
           </div>
         </div>
