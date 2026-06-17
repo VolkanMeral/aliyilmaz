@@ -26,7 +26,7 @@ export default function Footer() {
               <span className="logo-dot"></span>
             </div>
             <p className="brand-desc">
-              Ihr zuverlässiger Express-Logistikdienstleister und Fahrzeugvermieter in Vorarlberg. Schnelle und sichere Lieferungen, ohne Umwege.
+              Ihr zuverlässiger Express-Logistikdienstleister in Villach und Kärnten. Schnelle und sichere Lieferungen, ohne Umwege.
             </p>
           </div>
 

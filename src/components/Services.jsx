@@ -5,7 +5,7 @@ export default function Services() {
     {
       icon: '⚡',
       title: 'Same-Day & Express Kurier',
-      desc: 'Dringende Dokumente, Pakete oder Ersatzteile müssen sofort geliefert werden? Unser Express-Dienst stellt Sendungen in Vorarlberg innerhalb kürzester Zeit und am selben Tag zu.',
+      desc: 'Dringende Dokumente, Pakete oder Ersatzteile müssen sofort geliefert werden? Unser Express-Dienst stellt Sendungen in Villach/Kärnten innerhalb kürzester Zeit und am selben Tag zu.',
       badge: 'Schnellste Option'
     },
     {
@@ -19,12 +19,6 @@ export default function Services() {
       title: 'Auslandstransporte',
       desc: 'Umfassende Logistik über die Landesgrenzen hinaus. Wir transportieren Ihre Waren direkt und sicher nach Deutschland, in die Schweiz, nach Liechtenstein und in die gesamte EU.',
       badge: 'Grenzenlos'
-    },
-    {
-      icon: '🚚',
-      title: 'Fahrzeugvermietung',
-      desc: 'Benötigen Sie kurzfristig ein Transportfahrzeug? Aliyilmaz GmbH bietet einen modernen Fuhrpark von Kombis und Transportern zur Miete an – flexibel, unkompliziert und voll versichert.',
-      badge: 'Zusatzmodul'
     }
   ];
 
@@ -64,7 +58,7 @@ export default function Services() {
 
         .services-grid {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(3, 1fr);
           gap: 30px;
         }
 
